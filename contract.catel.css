@@ -1,0 +1,231 @@
+
+body{
+    background-color: #ffe3f4;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cercuri_rand{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.circle1{
+    height: 20vw;
+    width: 20vw;;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -9vw;
+    right: -2vw;
+}
+
+.circle2{
+    height: 15vw;
+    width: 15vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -7vw;
+    right: -5vw;
+}
+
+.circle3{
+    height: 13vw;
+    width: 13vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -7vw;
+    right: -8vw;
+}
+
+.circle4{
+    height: 10vw;
+    width: 10vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -7vw;
+    right: -9vw;
+}
+
+.circle5{
+    height: 7vw;
+    width: 7vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -5vw;
+    right: -10vw;
+}
+
+.circle6{
+    height: 5vw;
+    width: 5vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -4vw;
+    right: -11vw;
+}
+
+.circle7{
+    height: 4vw;
+    width: 4vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -3.5vw;
+    right: -12vw;
+}
+
+.circle8{
+    height: 3vw;
+    width: 3vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -2.5vw;
+    right: -12.5vw;
+}
+
+.cadru_text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.text{
+    font-family: "Brush Script MT";
+    font-size: 300%;
+    line-height: 10vw;
+    margin: auto;
+}
+
+.cercuri_rand2{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    position: absolute;
+    bottom: 0;
+}
+
+.circle11{
+    height: 20vw;
+    width: 20vw;;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -9vw;
+    left: -2vw;
+}
+
+.circle22{
+    height: 15vw;
+    width: 15vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -11vw;
+    left: -5vw;
+}
+
+.circle33{
+    height: 13vw;
+    width: 13vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -13vw;
+    left: -8vw;
+}
+
+.circle44{
+    height: 10vw;
+    width: 10vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -15vw;
+    left: -9vw;
+}
+
+.circle55{
+    height: 7vw;
+    width: 7vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -17vw;
+    left: -10vw;
+}
+
+.circle66{
+    height: 5vw;
+    width: 5vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -18.54vw;
+    left: -11vw;
+}
+
+.circle77{
+    height: 4vw;
+    width: 4vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    bottom: -19vw;
+    left: -12vw;
+}
+
+.circle8{
+    height: 3vw;
+    width: 3vw;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+    top: -2.5vw;
+    right: -12.5vw;
+}
+.eu {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block; 
+}
+
+
+@media (max-width:900px){
+    .text{
+        font-family: "Brush Script MT";
+        font-size: 300%;
+        line-height: 10vw;
+        margin: auto;
+        margin-top: 15%;
+    }
+}
+
+
+@media (max-width:500px){
+    .text{
+        font-family: "Brush Script MT";
+        font-size: 200%;
+        line-height: 10vw;
+        margin: auto;
+        margin-top: 30%;
+    }
+}
+
+
+@media (max-width:300px){
+    .text{
+        font-family: "Brush Script MT";
+        font-size: 350%;
+        line-height: 10vw;
+        margin: auto;
+        margin-top: 35%;
+    }
+}
