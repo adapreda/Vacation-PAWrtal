@@ -1,0 +1,168 @@
+
+    body{
+        background-color: #ffe3f4;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 80%;
+        background-color: #fcfafb;
+        height: 15vh;
+        border-radius: 15%;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 4%;
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlu{
+        font-family: "Georgia";
+        font-size: 150%;
+    }
+    .titlu:hover {
+        animation-name: modif_size;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; /*de cate ori sa se repete animatia*/
+    }
+    @keyframes modif_size{
+        0% {color:#f5e9ef;}
+        25% {color: #f0d1e0;}
+        50% {color: #d69fb9;}
+        75% {color: #f0d1e0;}
+        100% {color: #f5e9ef;}
+    }
+
+    .contract_cadru{
+        width: 80%;
+        background-color: #fcfafb;
+        height: auto;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 3%;
+        border-radius: 10%;
+        padding: 10px;
+    }
+    .suport_text_cadru{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titlu_in_cadru{
+        font-family: "Georgia";
+        font-size: 120%;
+    }
+    .text_in_cadru{
+        font-family: "Georgia";
+        font-size: 100%;
+        text-indent: 5vw;
+        margin-left: 2%;
+        /*padding: 1%;*/
+    }
+
+/*aici incep stilizarile pentru animatii*/
+
+    .cadru_animatie_contract{
+        width: 80%;
+        background-color: #fcfafb;
+        height: 30vh;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10%;
+    }
+    .semnatura_contract{
+        width: 10vw;
+        height: 10vh;
+        border-radius: 10%;
+        display: inline-block;
+        /*margin-right: auto !important;*/
+        margin-left: 2%;
+        margin-top: 10%;
+    }
+    .semnatura_contract_amprenta{
+        width: 7vw;
+        height: 7vh;
+        opacity: 0;
+    }
+
+    .buton_semnatura{
+        width: 15vw;
+        height: 7vh;
+        background-color: #a65946;
+        border-radius: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        text-align: center;
+        padding-top:2%;
+    }
+
+    .buton_semnatura:hover{
+        box-shadow: 10px 10px 8px #cf9b7f;
+    }
+    .cadru_animatie_contract:active .semnatura_contract{
+        animation-name: miscare_labuta;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .cadru_animatie_contract:active .semnatura_contract_amprenta{
+        animation-name: aparitie_labuta;
+        animation-duration: 1s;
+        animation-delay: 2.5s; 
+    }
+    @keyframes miscare_labuta{
+        /*0.45s per %*/
+        0% { margin-left: 2%; margin-top:10%;}
+        20% {margin-left: 15%; margin-top:8%;}
+        40% { margin-left: 30%; margin-top:6%;}
+        60% {margin-left: 45%;margin-top:4%;}
+        80% { margin-left: 60%; margin-top:3%;}
+        100% { margin-left: 75%; margin-top:2%;}
+    }
+    @keyframes aparitie_labuta{
+        0% {opacity: 1}
+    }
+
+    .poze_animate{
+        display: flex;
+        justify-content: start;
+    }
+
+    .text_in_button{
+        font-family: "Georgia";
+        font-size: 70%;
+        text-align: center;
+    }
+
+@media (min-width:900px){
+    .titlu{
+        font-size: 200%;
+    }
+    .titlu_in_cadru{
+        font-size: 150%;
+    }
+    .text_in_cadru{
+        font-size: 120%;
+    }
+    .text_in_button{
+        text-align: center;
+        font-size: 120%;
+    }
+    .semnatura_contract{
+        margin-top: 3%;
+    }
+    @keyframes miscare_labuta{
+        /*0.45s per %*/
+        0% { margin-left: 2%; margin-top:3%;}
+        20% {margin-left: 15%; margin-top:3%;}
+        40% { margin-left: 30%; margin-top:2%;}
+        60% {margin-left: 45%;margin-top:2%;}
+        80% { margin-left: 60%; margin-top:1%;}
+        100% { margin-left: 75%; margin-top:1%;}
+    }
+}
+
+
+
