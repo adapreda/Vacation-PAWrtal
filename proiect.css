@@ -1,0 +1,1357 @@
+@media (min-width:641px){
+header{
+    height: 10vh;
+    background-color: #6fed91;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items:center;
+    margin-top: auto;
+}
+#title_paw{
+    display: inline-block;
+    font-family: "Georgia";
+    font-size: 180%;
+    text-align: center;
+}
+#title_paw:hover{
+   color: #07703d;
+}
+.image_bar{
+    display:inline-block;
+    height: 4em;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #39bd5c;
+}
+li{
+    float: left;
+}
+li a, .dropbutton{
+    display: inline-block;
+    color: white !important;
+    text-align: center;
+    padding:  14px 16px;
+}
+li a:hover, .dropdown:hover .dropbutton{
+    background: #229c42;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #0a9451;
+    min-width: 4vh;
+}
+.dropdown-content a{
+    color: white !important;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #07703d;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+body{
+    background-color: #ffe3f4;
+    margin: 0;
+    padding: 0;
+}
+
+#dcnoi_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+#dcnoi{
+    font-family: "Brush Script MT";
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.prezentare_poze{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.image_present{
+    width: 20em;
+    height: 20em;
+    margin-bottom: 4%;
+    border-radius: 10px;
+}
+.text_present{
+    column-count: 2;
+    column-gap: 7em;
+    column-width: 30px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2.5em;
+    font-family: "Georgia";
+}
+p{
+    text-indent: 1em;
+}
+.ending_line{
+    background-color: black;
+    height: 1px;
+    margin-bottom: 7em;
+}
+h2{
+    text-indent: 2em;
+    font-family:"Brush Script MT";
+    font-size:160%;
+    text-decoration: underline;
+}
+/*incep sa scriu continutul pentru sectiunea pisici*/
+.paragrafe_descriptive{
+    font-family: "Georgia";
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+a:hover {
+    color:green;
+}
+h3{
+    text-decoration: underline;
+    font-family: "Brush Script MT";
+    font-size: 140%;
+    text-indent:4em;
+    opacity:1;
+}
+h3:hover{
+    opacity: 0.5;
+    color: red;
+}
+/*aici incepe galeria cu camerele pentru pisici*/
+.cat_rooms_gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+}
+.regular_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_regular_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.regular_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.regular_cat_room:hover h4{
+    opacity: 1;
+    bottom: 4vh;
+}
+.exclusive_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_exclusive_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.exclusive_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.exclusive_cat_room:hover h4{
+    opacity: 1;
+    bottom: 4vh;
+}
+.vip_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_exclusive_cats_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.vip_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.vip_cat_room:hover h4{
+    opacity: 1;
+}
+.cat_rooms_gallery h4{
+    font-family: "Georgia";
+    color: #732e03;
+    opacity: 0;
+    transition: bottom 1s, opacity 1s;
+}
+/*aici se termina galeria cu poze pentru pisici*/
+
+/*aici incepe prezentarea tipurilor de mancare*/
+
+.cat_food{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    mix-blend-mode: multiply;
+}
+#wiskas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(wiskas.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#wiskas:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#sheba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(sheba.webp);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#sheba:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#felix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 50%;
+    background-image: url(felix.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#felix:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.text_in_circle{
+    font-family: "Georgia";
+    font-size: 150%;
+    color: #150a21;
+}
+/*aici se termina prezentarea tipurilor de mancare*/
+
+/*aici incepe contractul*/
+
+.sign_contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton{
+    height: 10vh;
+    width: 20vw;
+    border: 2px solid #0a9451;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto auto auto auto;
+    color: #150a21;
+    font-size: 1.2em !important;
+}
+.buton:hover{
+    background-color: #0a9451;
+    color: white;
+}
+.text_in_button{
+    font-family:"Georgia";
+    font-size: 80%;
+    color: #150a21;
+    text-align: center;
+}
+/*aici se termina contractul*/
+
+/*aici incepe sectiunea pentru catei*/
+
+/*aici incepe prezentarea camerelor pentru catei*/
+
+.prezentare_camere_catei{
+    display: grid;
+    grid-template-areas: "camera_catel camera_catel"
+                         "camera_catel camera_catel";
+    justify-content: center;
+    column-gap: 4vw;
+    row-gap: 6vh;
+    margin-top: 4%;
+}
+
+.camera_catel{
+    width: 40vw;
+    height: 30vh;
+    border-radius: 20%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.text_galeria_catel{
+    opacity: 0;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.camera_catel_regular{
+    background-image: url(camera_regular_catel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_regular:hover{
+    background-image: none; 
+    background-color: forestgreen;
+    box-shadow: 5px 5px 5px grey;
+    animation-name: curcubeu_verde;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes curcubeu_verde{
+    0% {background-color: forestgreen;}
+    10% {background-color: #319931;}
+    20% {background-color: #44ad44;}
+    30% {background-color: #54bf54;}
+    40% {background-color: #5dc25d;}
+    50% {background-color: #72cf72;}
+    60% {background-color: #5dc25d;}
+    70% {background-color: #54bf54;}
+    80% {background-color: #44ad44;}
+    90% {background-color: #319931;}
+    100% {background-color: forestgreen;}
+}
+.camera_catel_regular:hover h4{
+    opacity: 1;
+    color: yellow;
+}
+.camera_catel_exclusive{
+    background-image: url(camera_exclusive_catel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_exclusive:hover{
+    background-image: none;
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px grey;
+}
+.camera_catel_exclusive:hover h4{
+    opacity: 1;
+    color: magenta;
+    animation-name: rotire_text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotire_text{
+    0% {transform: rotate(0deg)}
+    10% {transform: rotate(-40deg)}
+    20% {transform: rotate(-80deg)}
+    30% {transform: rotate(-120deg)}
+    40% {transform: rotate(-160deg)}
+    50% {transform: rotate(-180deg)}
+    60% {transform: rotate(-220deg)}
+    70% {transform: rotate(-240deg)}
+    80% {transform: rotate(-280deg)}
+    90% {transform: rotate(-300deg)}
+    100% {transform: rotate(-360deg)}
+}
+
+.camera_catel_vip{
+    background-image: url(camera_vip_catei.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_vip:hover{
+    background-image: none;
+    background-color: #ddaf86;
+    box-shadow: 5px 5px 5px grey; 
+}
+.camera_catel_vip:hover h4{
+    opacity: 1;
+    color: brown;
+    position: absolute;
+}
+.minge_camera_vip{
+    border-radius: 50%;
+    opacity :0;
+    height: 8vh;
+    width: 8vw;
+    margin-top: auto;
+    background-image: url(minge_fara_background.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_vip:hover .minge_camera_vip{
+    opacity:1;
+    animation-name: miscare_minge;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes miscare_minge{
+    0% {margin-top: auto;}
+    30% {margin-bottom: 50%; margin-left: 50%;}
+    45% {margin-bottom: 40%; margin-left: 25%;}
+    60% {margin-bottom: 30%; margin-right: auto; }
+    75% {margin-bottom: 15%; margin-right: 15%;}
+    100%{ margin-top: auto;}
+}
+
+.hotel_parc{
+    background-image: url(park.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.hotel_parc:hover h4{
+    opacity: 1;
+}
+.hotel_parc:hover{
+    background-image: url(catsanddogs.jpg);
+    box-shadow: 5px 5px 5px grey; 
+}
+
+/*aici se termina prezentarea camerelor pentru catei*/
+
+/*aici incepe prezentarea mancarii pentru catei*/
+
+.prezentare_poze_catei{
+    column-count: 2;
+    column-gap: 2em;
+    column-width: 15px;
+    margin-left: 4em;
+    margin-right: 5em;
+    margin-bottom: 2.5em;
+}
+.prezentare_imagine{
+    width: 10em;
+    height: 10em;
+    margin-bottom: 4%;
+    border-radius: 10px;
+}
+.text{
+    font-family: "Georgia";
+    font-size: 120%;
+}
+
+.cadru_buton_catei{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.buton_catel{
+    height: 20vh;
+    width: 15vw;
+    background-image: url(waving_dog-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+
+/*aici se termina prezentarea mancarii pentru catei*/
+}
+
+
+ @media (max-width:640px){
+    header{
+        height: 10vh;
+        background-color: #6fed91;
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items:center;
+    }
+    #title_paw{
+        display: inline-block;
+        font-family: "Georgia";
+        font-size: 120%;
+        text-align: center;
+    }
+    #title_paw:hover{
+       color: #07703d;
+    }
+    .image_bar{
+        display:inline-block;
+        height: 3em;
+        border-radius: 10px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #39bd5c;
+    }
+    li{
+        float: left;
+    }
+    li a, .dropbutton{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding:  8px 10px;
+    }
+    li a:hover, .dropdown:hover .dropbutton{
+        background: #229c42;
+    }
+    li.dropdown{
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #0a9451;
+        min-width: 2vh;
+    }
+    .dropdown-content a{
+        color: white;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover{
+        background-color: #07703d;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    body{
+        background-color: #ffe3f4;
+        margin: 0;
+        padding: 0;
+    }
+    #dcnoi_cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    #dcnoi{
+        font-family: "Brush Script MT";
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .prezentare_poze{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+    }
+    .image_present{
+        width: 18em;
+        height: 18em;
+        margin-bottom: 5%;
+        border-radius: 10px;
+    }
+    .text_present{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-family: "Georgia";
+    }
+    p{
+        text-indent: 1em; /*alineat 1em*/
+    }
+    .ending_line{
+        background-color: black;
+        height: 1px;
+        margin-bottom: 7em;
+    }   
+    h2{
+        text-indent: 2em;
+        font-family:"Brush Script MT";
+        font-size:160%;
+        text-decoration: underline;
+    }
+    /*incep sa scriu continutul pentru sectiunea pisici*/
+    .paragrafe_descriptive{
+        font-family: "Georgia";
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    a:hover {
+        color:green;
+    }
+    h3{
+        text-decoration: underline;
+        font-family: "Brush Script MT";
+        font-size: 140%;
+        text-indent: 3em;
+    }
+/*aici incepe galeria cu poze pentru pisici*/
+.cat_rooms_gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+.regular_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_regular_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.regular_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.exclusive_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_exclusive_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.exclusive_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.vip_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_exclusive_cats_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.vip_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+/*aici se termina galeria cu poze pentru pisici*/
+
+/*aici incepe prezentarea tipurilor de mancare*/
+
+.cat_food{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+#wiskas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(wiskas.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#wiskas:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#sheba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(sheba.webp);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#sheba:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#felix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+    background-image: url(felix.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#felix:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.text_in_circle{
+    font-family: "Georgia";
+    font-size: 120%;
+    color: #150a21;
+}
+
+/*aici se termina prezentarea tipurilor de mancare*/
+
+/*aici incepe contractul*/
+
+.sign_contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton{
+    height: 10vh;
+    width: 20vw;
+    border: 2px solid #0a9451;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto auto auto auto;
+    color: #150a21;
+    font-size: 1.2em !important;
+}
+.buton:hover{
+    background-color: #0a9451;
+    color: white;
+}
+.text_in_button{
+    font-family:"Georgia";
+    font-size:70%;
+    color: #150a21;
+}
+/*aici se termina contractul*/
+
+/*aici incepe prezentarea camerelor pentru catei*/
+
+.prezentare_camere_catei{
+    display: grid;
+    grid-template-areas: "camera_catel camera_catel"
+                         "camera_catel camera_catel";
+    justify-content: center;
+    column-gap: 4vw;
+    row-gap: 6vh;
+    margin-top: 4%;
+}
+
+.camera_catel{
+    width: 40vw;
+    height: 30vh;
+    border-radius: 20%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.text_galeria_catel{
+    opacity: 0;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.camera_catel_regular{
+    background-image: url(camera_regular_catel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_regular:hover{
+    background-image: none; 
+    background-color: forestgreen;
+    box-shadow: 5px 5px 5px grey;
+    animation-name: curcubeu_verde;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes curcubeu_verde{
+    0% {background-color: forestgreen;}
+    10% {background-color: #319931;}
+    20% {background-color: #44ad44;}
+    30% {background-color: #54bf54;}
+    40% {background-color: #5dc25d;}
+    50% {background-color: #72cf72;}
+    60% {background-color: #5dc25d;}
+    70% {background-color: #54bf54;}
+    80% {background-color: #44ad44;}
+    90% {background-color: #319931;}
+    100% {background-color: forestgreen;}
+}
+.camera_catel_regular:hover h4{
+    opacity: 1;
+    color: yellow;
+}
+.camera_catel_exclusive{
+    background-image: url(camera_exclusive_catel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_exclusive:hover{
+    background-image: none;
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px grey;
+}
+.camera_catel_exclusive:hover h4{
+    opacity: 1;
+    color: magenta;
+    animation-name: rotire_text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotire_text{
+    0% {transform: rotate(0deg)}
+    10% {transform: rotate(-40deg)}
+    20% {transform: rotate(-80deg)}
+    30% {transform: rotate(-120deg)}
+    40% {transform: rotate(-160deg)}
+    50% {transform: rotate(-180deg)}
+    60% {transform: rotate(-220deg)}
+    70% {transform: rotate(-240deg)}
+    80% {transform: rotate(-280deg)}
+    90% {transform: rotate(-300deg)}
+    100% {transform: rotate(-360deg)}
+}
+
+.camera_catel_vip{
+    background-image: url(camera_vip_catei.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.hotel_parc{
+    background-image: url(park.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.prezentare_poze_catei{
+    column-count: 2;
+    column-gap: 2em;
+    column-width: 15px;
+    margin-left: 4em;
+    margin-right: 5em;
+    margin-bottom: 2.5em;
+}
+.prezentare_imagine{
+    width: 10em;
+    height: 10em;
+    margin-bottom: 4%;
+    border-radius: 10px;
+}
+.text{
+    font-family: "Georgia";
+    font-size: 120%;
+}
+
+.cadru_buton_catei{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+.buton_catel{
+    height: 10vh;
+    width: 20vw;
+    background-image: url(waving_dog-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+}
+
+@media (max-width: 439px){
+    header{
+        height: 10vh;
+        background-color: #6fed91;
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items:center;
+    }
+    #title_paw{
+        display: inline-block;
+        font-family: "Georgia";
+        font-size: 75%;
+        text-align: center;
+    }
+    #title_paw:hover{
+       color: #07703d;
+    }
+    .image_bar{
+        display:inline-block;
+        height: 1.5em;
+        border-radius: 10px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #39bd5c;
+    }
+    li{
+        float: left;
+    }
+    li a, .dropbutton{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding:  6px 8px;
+    }
+    li a:hover, .dropdown:hover .dropbutton{
+        background: #229c42;
+    }
+    li.dropdown{
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #0a9451;
+        min-width: 2vh;
+    }
+    .dropdown-content a{
+        color: white;
+        padding: 6px 8px;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover{
+        background-color: #07703d;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    body{
+        background-color: #ffe3f4;
+        margin: 0;
+        padding: 0;
+    }
+    #dcnoi_cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    #dcnoi{
+        font-family: "Brush Script MT";
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .prezentare_poze{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+    }
+    .image_present{
+        width: 12em;
+        height: 12em;
+        margin-bottom: 5%;
+        border-radius: 10px;
+    }
+    .text_present{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-family: "Georgia";
+    }
+    p{
+        text-indent: 1em; /*alineat 1em*/
+    }
+    .ending_line{
+        background-color: black;
+        height: 1px;
+        margin-bottom: 7em;
+    }   
+    h2{
+        text-indent: 2em;
+        font-family:"Brush Script MT";
+        font-size:160%;
+        text-decoration: underline;
+    }
+    /*incep sa scriu continutul pentru sectiunea pisici*/
+    .paragrafe_descriptive{
+        font-family: "Georgia";
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    a:hover {
+        color:green;
+    }
+    h3{
+        text-decoration: underline;
+        font-family: "Brush Script MT";
+        font-size: 140%;
+        text-indent: 3em;
+    }
+/*aici incepe galeria cu poze pentru pisici*/
+.cat_rooms_gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+.regular_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_regular_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.regular_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.exclusive_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_exclusive_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.exclusive_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.vip_cat_room{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-image: url(camera_exclusive_cats_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+.vip_cat_room:hover{
+    width: 50vw;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+/*aici se termina galeria cu poze pentru pisici*/
+
+/*aici incepe prezentarea tipurilor de mancare*/
+
+.cat_food{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+#wiskas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(wiskas.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#wiskas:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#sheba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(sheba.webp);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#sheba:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#felix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+    background-image: url(felix.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+#felix:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.text_in_circle{
+    font-family: "Georgia";
+    font-size: 120%;
+    color: #150a21;
+}
+
+/*aici se termina prezentarea tipurilor de mancare*/
+
+/*aici incepe contractul*/
+
+.sign_contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton{
+    height: 10vh;
+    width: 20vw;
+    border: 2px solid #0a9451;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto auto auto auto;
+    color: #150a21;
+    font-size: 1.2em !important;
+}
+.buton:hover{
+    background-color: #0a9451;
+    color: white;
+}
+.text_in_button{
+    font-family:"Georgia";
+    font-size:70%;
+    color: #150a21;
+}
+/*aici se termina contractul*/
+
+/*aici incepe prezentarea camerelor pentru catei*/
+
+.prezentare_camere_catei{
+    display: grid;
+    grid-template-areas: "camera_catel camera_catel"
+                         "camera_catel camera_catel";
+    justify-content: center;
+    column-gap: 4vw;
+    row-gap: 6vh;
+    margin-top: 4%;
+}
+
+.camera_catel{
+    width: 40vw;
+    height: 30vh;
+    border-radius: 20%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.text_galeria_catel{
+    opacity: 0;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.camera_catel_regular{
+    background-image: url(camera_regular_catel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_regular:hover{
+    background-image: none; 
+    background-color: forestgreen;
+    box-shadow: 5px 5px 5px grey;
+    animation-name: curcubeu_verde;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes curcubeu_verde{
+    0% {background-color: forestgreen;}
+    10% {background-color: #319931;}
+    20% {background-color: #44ad44;}
+    30% {background-color: #54bf54;}
+    40% {background-color: #5dc25d;}
+    50% {background-color: #72cf72;}
+    60% {background-color: #5dc25d;}
+    70% {background-color: #54bf54;}
+    80% {background-color: #44ad44;}
+    90% {background-color: #319931;}
+    100% {background-color: forestgreen;}
+}
+.camera_catel_regular:hover h4{
+    opacity: 1;
+    color: yellow;
+}
+.camera_catel_exclusive{
+    background-image: url(camera_exclusive_catel.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.camera_catel_exclusive:hover{
+    background-image: none;
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px grey;
+}
+.camera_catel_exclusive:hover h4{
+    opacity: 1;
+    color: magenta;
+    animation-name: rotire_text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotire_text{
+    0% {transform: rotate(0deg)}
+    10% {transform: rotate(-40deg)}
+    20% {transform: rotate(-80deg)}
+    30% {transform: rotate(-120deg)}
+    40% {transform: rotate(-160deg)}
+    50% {transform: rotate(-180deg)}
+    60% {transform: rotate(-220deg)}
+    70% {transform: rotate(-240deg)}
+    80% {transform: rotate(-280deg)}
+    90% {transform: rotate(-300deg)}
+    100% {transform: rotate(-360deg)}
+}
+
+.camera_catel_vip{
+    background-image: url(camera_vip_catei.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.hotel_parc{
+    background-image: url(park.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.prezentare_poze_catei{
+    column-count: 2;
+    column-gap: 2em;
+    column-width: 15px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2.5em;
+}
+.prezentare_imagine{
+    width: 10em;
+    height: 10em;
+    margin-bottom: 4%;
+    border-radius: 10px;
+}
+.text{
+    font-family: "Georgia";
+    font-size: 80%;
+}
+
+.cadru_buton_catei{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+}
+.buton_catel{
+    height: 10vh;
+    width: 20vw;
+    background-image: url(waving_dog-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+}
+ 
