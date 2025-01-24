@@ -6,7 +6,7 @@
         <title>Vacation PAWrtal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="paw.png">
-        <link rel="stylesheet" href="proiect.css" type="text/css">  
+        <link rel="stylesheet" href="proiect.css" type="text/css"> 
     </head>
 
     <body>
@@ -42,9 +42,23 @@
     </div>
 
     <div class="prezentare_poze">
-            <img class="image_present" src="sleeping_cat.jpg" alt="a cat which is sleeping">
-            <img class="image_present" src="sleeping_dog.jpg" alt="a dog which is sleeping">
+            <img id="pisicut" class="image_present" src="sleeping_cat.jpg" alt="a cat which is sleeping">
+            <img id="catelandru" class="image_present" src="sleeping_dog.jpg" alt="a dog which is sleeping">
     </div>
+
+    <div class="ajutor_extensie">
+            <img id="pop_extensie" class="poza_ajutor2" src="close.png">
+            <div class="fereastra_pop">
+                <span id="casuta">Completeaza chestionarul!</span>
+            </div>
+            <button class="buton_form"><a href="intrebari.html">Intra aici!</a></button>
+    </div>
+
+    <div class="ajutor">
+        <img class="poza_ajutor" src="headphones.png" alt="headphones">
+        <p id="casuta">Te pot ajuta cu ceva?</p>
+    </div>
+
     <div class="text_present">
         <p>O <a href="https://youtu.be/p2Aqyu0iiOQ?si=E6tn5Vt_6yNWcG7f">pisică</a> cazată la <b><i>Vacation PAWrtal</i></b> beneficiază de un mediu confortabil și sigur, menit să îi asigure o experiență plăcută. <b><i>Vacation PAWrtal</i></b> oferă spații individuale unde pisica poate să se odihnească liniștită, dar și locuri de joacă special amenajate, cu ansambluri de cățărat și jucării care îi stimulează curiozitatea. Personalul hotelier are grijă de hrănirea și îngrijirea zilnică, iar uneori poate oferi servicii adiționale, cum ar fi periatul sau timpul de socializare. Hotelul include camere video pentru ca proprietarii 
             să urmărească activitățile pisicii lor, oferindu-le siguranța că aceasta se simte ca acasa. 
@@ -82,20 +96,21 @@
     </div>
 
     <!--aici incepe prezentarea pachetelor pentru caini-->
-
+    <div>
     <h2 id="pachete_catei">Caini</h2>
         <p class="paragrafe_descriptive">Ce le oferim cateilor dumneavoastra?</p>
         <h3 id="tipuridecamere">Tipuri de camere</h3>
         <p class="paragrafe_descriptive">Vacation PAWrtal ofera cele mai bune acomodari pentru catelul tau!</p>
     
-    <div class="prezentare_camere_catei">
+   <div class="prezentare_camere_catei">
         <div class="camera_catel camera_catel_regular"><h4 class="text_galeria_catel">Camera Regular</h4></div>
         <div class="camera_catel camera_catel_exclusive"><h4 class="text_galeria_catel">Camera Exclusive</h4></div>
         <div class="camera_catel camera_catel_vip"><h4 class="text_galeria_catel">Camera VIP</h4>
             <div class="minge_camera_vip"></div>
         </div>
         <div class="camera_catel hotel_parc"><h4 class="text_galeria_catel">Va asteptam in PAWrtal Park</h4></div>
-    </div>
+    </div> 
+
 
     <h3 id="mancarecaini">Mancare</h3>
     <p class="paragrafe_descriptive"> La <b>Vacation PAWrtal</b> cateii se bucura de cea mai buna selectie de mancare!</p>
@@ -110,8 +125,6 @@
         <p class="text">Si aceasta!</p>
     </div>
 
-
-
     <h3 id="contractcaini">Contract</h3>
     <p class="paragrafe_descriptive">Te-am convins?</p>
     <p class="paragrafe_descriptive">Semneaza contractul si rezerva animalutului tau un loc acum!</p>
@@ -121,8 +134,135 @@
         <a href="contract.catel.html" class="buton_catel"></a>
     </div>
 
+    </div>
+
+    <h2>Cum se distreaza animalutele dumnevoastra?</h2>
+    <div class="galerie">
+        <!--galerie de poze cu js-->
+        
+        <img onclick="gallery(-1)"  class="stanga" src="left-arrow.png">
+
+        <div class="galerie">
+
+        <div class="contur_poza">
+            <img id="poza1" class="dim_poza" src="joc1.jpg" alt="what">
+            <p id="poza1_text" class="text_in_poze">Prieteni noi</p>
+        </div>
+
+        <div  class="contur_poza">
+            <img id="poza2" class="dim_poza" src="joc2.jpg" alt="what">
+            <p id="poza2_text" class="text_in_poze">Joaca cu prietenii</p>
+        </div>
+    
+        </div>
+        <img onclick="gallery(1)"  class="dreapta" src="right-arrow.png">     
+    </div>
+
+    <h2>Haideti sa va aratam un program special facut pentru prieteniii nostri!</h2>
+    <div class="cercuri">
+        <div id="cerc1" class="cerc">
+            <p class="what">6</p>
+        </div>
+        <div id="cerc2" class="cerc">
+            <p class="what">8</p>
+        </div>
+        <div id="cerc3" class="cerc">
+            <p class="what">12</p>
+        </div>
+        <div id="cerc4" class="cerc">
+            <p class="what">16</p>
+        </div>
+        <div id="cerc5" class="cerc">
+            <p class="what">20</p>
+        </div>
+        <div id="cerc6" class="cerc">
+            <p class="what">22</p>
+        </div>
+    </div>
+
+    <div class="cercuri">
+        <div id="patrat1" class="fer">
+            <p class="text_in_fer">Trezirea! E timpul pentru joacă și distracție!</p>
+        </div>
+        <div id="patrat2" class="fer">
+            <p class="text_in_fer">Mic dejunul este gata, veniți să mâncați!</p>
+        </div>
+        <div id="patrat3" class="fer">
+            <p class="text_in_fer">Sa dam o tura prin parc!</p>
+        </div>
+        <div id="patrat4" class="fer">
+            <p class="text_in_fer">Haideti, este ora pranzului!</p>
+        </div>
+        <div id="patrat5" class="fer">
+            <p class="text_in_fer">Timpul sa petrecum timp impreuna!</p>
+        </div>
+        <div id="patrat6" class="fer">
+            <p class="text_in_fer">Am pregatit paturile!</p>
+        </div> 
+    </div>
+
+    <h2>Castiga jocul si bucura-te de reducerea de 50%!</h2>
+    <p class="paragrafe_descriptive">Regulile jocului:</p>
+    <p class="paragrafe_descriptive">In casuta de mai jos sunt ascunse 12 poze. Trebuie sa ghiciti 2 poze identice pentru a castiga jocul!</p>
+    <p class="paragrafe_descriptive">Tastele P, N, B, S, I, A, H, Y, C, O, G si R sunt cheile pentru dezlegarea misterului!</p>
+    <p class="paragrafe_descriptive">Aveti 10 secunde pentru a descoperi ce se ascunde in spatele peretelui negru!</p>
+    <p class="paragrafe_descriptive">Succes!</p>
+    <div class="sign_contract">
+        <button id="play">PLAY NOW</button>
+    </div>
+
+    <div class="sign_contract">
+        <div class="cadru_joc">
+            <img id="pop_extensie2" class="poza_ajutor3" src="close2.png">
+            <div>
+                <img id="card1" class="poza_in_joc" src="pisica_neagra.jpg">
+                <img id="card2" class="poza_in_joc" src="bishon.jpg">
+                <img id="card3" class="poza_in_joc" src="pisica_alba.jpg">
+                <img id="card4" class="poza_in_joc" src="husky.jpg">
+                <img id="card5" class="poza_in_joc" src="pisica_portocalie.jpg">
+                <img id="card6" class="poza_in_joc" src="pisica_neagra.jpg">
+                <img id="card7" class="poza_in_joc" src="pisica_gri.jpg">
+                <img id="card8" class="poza_in_joc" src="pisica_portocalie.jpg">
+                <img id="card9" class="poza_in_joc" src="pisica_gri.jpg">
+                <img id="card10" class="poza_in_joc" src="husky.jpg">
+                <img id="card11" class="poza_in_joc" src="bishon.jpg">
+                <img id="card12" class="poza_in_joc" src="pisica_alba.jpg">
+            </div>
+            <div class="poza_ajutor3 counter" >
+                <p class="counter_text">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="sign_contract">
+            <div class="rezultat">
+                <div>
+                    <p class="paragrafe_descriptive">Rezultat</p>
+                    <p id = 'result' class="paragrafe_descriptive">loading...</p>
+                </div>
+                <div>
+                    <p class="paragrafe_descriptive">Punctaj</p>
+                    <p id = 'howmuch' class="paragrafe_descriptive">loading...</p>
+                </div>
+                <div>
+                    <p class="paragrafe_descriptive">Calificativ</p>
+                    <p id = 'calif' class="paragrafe_descriptive">loading...</p>
+                </div>
+                <div>
+                    <p class="paragrafe_descriptive">Timp de lucru</p>
+                    <p id ='time' class="paragrafe_descriptive">loading...</p>
+                </div>
+            </div>
+    </div>
+    
+    
+    
+    <div id="what"></div>
+    <div class="footer_class"></div>
+
     
 
     </body>
+
+    <script type="text/javascript" src="proiect.js"></script>
 
 </html>
