@@ -1,7 +1,7 @@
 @media (min-width:641px){
 header{
-    height: 10vh;
-    background-color: #6fed91;
+    height: 15vh;
+    background-color: #f5edf2;
     position: sticky;
     width: 100%;
     display: flex;
@@ -16,8 +16,15 @@ header{
     font-size: 180%;
     text-align: center;
 }
+
+#title_paw_2{
+    font-size: 260%;
+    font-family: "Brush Script MT";
+    font-weight: bold;
+}
+
 #title_paw:hover{
-   color: #07703d;
+   color: #6dacb3;
 }
 .image_bar{
     display:inline-block;
@@ -29,7 +36,8 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #39bd5c;
+    background-color: #6dacb3;
+    border-radius : 5%;
 }
 li{
     float: left;
@@ -41,7 +49,7 @@ li a, .dropbutton{
     padding:  14px 16px;
 }
 li a:hover, .dropdown:hover .dropbutton{
-    background: #229c42;
+    background: #37818a;
 }
 li.dropdown{
     display: inline-block;
@@ -49,8 +57,9 @@ li.dropdown{
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #0a9451;
+    background-color: #419ba6;
     min-width: 4vh;
+    border-radius: 5%;
 }
 .dropdown-content a{
     color: white !important;
@@ -59,7 +68,7 @@ li.dropdown{
     text-align: left;
 }
 .dropdown-content a:hover{
-    background-color: #07703d;
+    background-color: #27838f;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -105,11 +114,6 @@ body{
 }
 p{
     text-indent: 1em;
-}
-.ending_line{
-    background-color: black;
-    height: 1px;
-    margin-bottom: 7em;
 }
 h2{
     text-indent: 2em;
@@ -303,14 +307,16 @@ h3:hover{
     font-size: 1.2em !important;
 }
 .buton:hover{
-    background-color: #0a9451;
+    background-color: #5B9AA0;
     color: white;
+    box-shadow: 10px 10px #bdbbb5;
 }
 .text_in_button{
     font-family:"Georgia";
     font-size: 80%;
     color: #150a21;
     text-align: center;
+    margin-top: 6%;
 }
 /*aici se termina contractul*/
 
@@ -499,6 +505,215 @@ h3:hover{
     background-position: center;
     box-sizing: border-box;
     border-radius: 10%;
+}
+
+.footer_class{
+    height: 40vh;
+    width: 100%;
+    background-color: #f5edf2;
+    display: inline-block;
+   
+}
+.text_in_footer{
+    font-size: 100%;
+    color: blue;
+    text-align: center;
+}
+.footer_text{
+    font-size: 120%;
+    text-align: center;
+}
+.contacte_div{
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#what{
+    height: 10vh;
+}
+.galerie{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   column-gap: 20px;
+}
+.dim_poza{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+.text_in_poze{
+    font-family: 'Georgia';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contur_poza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    background-color: whitesmoke;
+}
+.adaug_text{
+    height: 100px;
+    width: 300px;
+    background-color: whitesmoke;
+}
+.stanga{
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+}
+.stanga:hover{
+    opacity: 0.5;
+}
+.dreapta{
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+}
+.dreapta:hover{
+    opacity: 0.5;
+}
+
+.ajutor{
+    height: 25vh;
+    width: 15vw;
+    background-color: whitesmoke;
+    right: 3vw;
+    bottom: 7vh;
+    border-radius: 20%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: width 1s, height 1s;
+}
+.ajutor:hover{
+    width: 17vw;
+    height: 27vh;
+}
+.ajutor_extensie{
+    height: 30vh;
+    width: 15vw;
+    background-color: whitesmoke;
+    border-radius: 20%;
+    right: 3vw;
+    bottom: 33vh;
+    position: fixed;
+    display: none;
+}
+.poza_ajutor2{
+    height: 2vh;
+    width: 1vw;
+    margin-left: 80%;
+    margin-top: 10%;
+}
+.poza_ajutor{
+    height: 6vh;
+    width: 3vw;
+}
+.fereastra_pop{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton_form{
+    margin-left: 35%;
+    background-color: #419ba6;
+}
+.cerc{
+    height: 25px;
+    width: 25px;
+    background-color: #419ba6;
+    border-radius: 50%;
+    transition: height 1s, width 1s;
+}
+.cerc:hover{
+    height: 40px;
+    width: 40px;
+}
+.what{
+    opacity: 0;
+    font-size: 80%;
+    align-content: center;
+    font-weight: bold;
+}
+.what:hover{
+    opacity: 1;
+}
+.cercuri{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fer{
+    height: 125px;
+    width: 125px;
+    border-radius: 4%;
+    background-color: #ffe3f4;
+    border: 1px solid #C48B8B;
+    opacity: 0;
+}
+.text_in_fer{
+    text-align: center;
+    font-family: 'Georgia';
+    color: #5B9AA0;
+}
+.cadru_joc{
+    display: none;
+    height: 70vh;
+    width: 80vw;
+    background-color: black;
+    margin-top: 2%;
+}
+.poza_ajutor3{
+    height: 2vh;
+    width: 1vw;
+    margin-left: 97%;
+    margin-top: 2%;
+}
+.poza_in_joc{
+    height: 20vh;
+    width: 10vw;
+    margin-left: 2%;
+    border-radius: 10%;
+    margin-top: 2%;
+    opacity: 0;
+}
+.counter{
+    background-color: whitesmoke;
+    height: 30px !important;
+    width: 30px !important;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter_text{
+    color: blue;
+    padding-right: 15px;
+}
+.rezultat{
+    height: 20vh;
+    width: 60vw;
+    background-color: #BF7EFF;
+    margin-top: 3%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
 }
 
 /*aici se termina prezentarea mancarii pentru catei*/
