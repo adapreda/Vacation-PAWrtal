@@ -1,0 +1,16 @@
+body{
+    background-color: #ffe3f4;
+    margin: 0;
+    padding: 0;
+}
+.cadru{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.bilet{
+    font-size: 120%;
+    color: blue;
+}
