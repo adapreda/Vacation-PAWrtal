@@ -23,3 +23,11 @@ Proiectul combină HTML, CSS, JavaScript și PHP pentru o experiență completă
 - **Joc interactiv** cu imagini, controlat prin tastatură, pentru a câștiga reduceri.  
 - **Formular de rezervare complet** cu validare și trimitere prin `mail.php`.  
 - **Design responsive** pentru desktop, tabletă și mobil. 
+
+## Tehnologii utilizate
+
+- **HTML5** – structură semantică modernă  
+- **CSS3** – layout-uri flexibile, animații, media queries  
+- **JavaScript (Vanilla)** – interactivitate și manipularea DOM-ului  
+- **PHP** – procesarea datelor din formular  
+- **Local Storage API** – stocarea temporară a datelor din formular 
