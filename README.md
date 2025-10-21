@@ -14,3 +14,12 @@ Proiectul combină HTML, CSS, JavaScript și PHP pentru o experiență completă
 | `intrebari.css` | Stilurile pentru pagina de rezervare. |
 | `intrebari.js` | Script ce gestionează stocarea locală a datelor introduse în formular. |
 | `mail.php` | Script PHP care procesează și trimite datele din formular prin e-mail (backend simplu). |
+
+## Funcționalități principale
+
+- **Navigare interactivă** cu meniu drop-down pentru pisici și căței.  
+- **Galerii dinamice** pentru camere și hrană, controlate prin hover și click.  
+- **Pop-up de asistență** („Te pot ajuta cu ceva?”) care se extinde la click.  
+- **Joc interactiv** cu imagini, controlat prin tastatură, pentru a câștiga reduceri.  
+- **Formular de rezervare complet** cu validare și trimitere prin `mail.php`.  
+- **Design responsive** pentru desktop, tabletă și mobil. 
